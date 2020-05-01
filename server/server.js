@@ -30,7 +30,7 @@ app.use("/api/secrets", secretsRouter);
 // Serve static files
 app.use(express.static("build"));
 
-// App Set //
+// App Set // should always use process.env.PORT for heroku setup
 const PORT = process.env.PORT || 5000;
 
 /** Listen * */
